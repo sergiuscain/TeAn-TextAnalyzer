@@ -9,13 +9,13 @@ namespace TeAn_TextAnalyzer_
             InitializeComponent();
         }
 
-        private void convertButton_Click(object sender, EventArgs e)
+        private async void convertButton_Click(object sender, EventArgs e)
         {
             var textProcessor = new TextProcessor();
             var text = inputTextBox.Text;
             var uniqueWords = textProcessor.GetUniqueWords(text);
-            var translateWords = textProcessor.Translate(uniqueWords);
-            var resultString = string.Join(Environment.NewLine, translateWords.Select(w => $"{w.English} --> {w.Russian}"));
+            var translateWords = await textProcessor.TranslateAsync(uniqueWords);
+            var resultString = string.Join(Environment.NewLine, translateWords.Select(w => $"{w.Original} --> {w.TranslatedText}"));
             outputTextBox.Text = resultString;
         }
     }
