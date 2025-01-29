@@ -7,7 +7,7 @@ namespace TeAn.Processor
     public class TextProcessor
     {
         // Метод для разбиения текста на уникальные слова корневой формы.
-        public static HashSet<string> GetUniqueWords(string text)
+        public HashSet<string> GetUniqueWords(string text)
         {
             // Удаляем знаки препинания и приводим текст к нижнему регистру
             //  [^\w\s  --  регулярное выражение, которое определяет, что именно нужно заменить.
@@ -23,7 +23,7 @@ namespace TeAn.Processor
             foreach (string word in words)
             {
                 string rootWord = stemmer.GetStem(word);
-                uniqueBaseWords.Add(word);
+                uniqueBaseWords.Add(rootWord);
             }
             //Возвращаем список уникальных английских слов.
             return uniqueBaseWords;
