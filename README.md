@@ -22,5 +22,7 @@
         <li>Вывод результатов в формате "Оригинальное слово --> Перевод"</li>
     </ul>
     <img src="https://github.com/user-attachments/assets/37554c22-f09a-4b79-af8b-bd0b09dfde2b" alt="Проект">
+    ![image](https://github.com/user-attachments/assets/dfd13f14-a7a3-4ab4-abb1-97a2da8bf777)
+
 </body>
 </html>
