@@ -14,7 +14,9 @@ namespace TeAn_TextAnalyzer_
             var textProcessor = new TextProcessor();
             var text = inputTextBox.Text;
             var uniqueWords = textProcessor.GetUniqueWords(text);
-            outputTextBox.Text = string.Join(", ", uniqueWords);
+            var translateWords = textProcessor.Translate(uniqueWords);
+            var resultString = string.Join(Environment.NewLine, translateWords.Select(w => $"{w.English} --> {w.Russian}"));
+            outputTextBox.Text = resultString;
         }
     }
 }

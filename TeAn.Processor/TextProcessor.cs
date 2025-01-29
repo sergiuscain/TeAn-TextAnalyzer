@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using PorterStemmer;
 using PorterStemmer.Stemmers;
+using TeAn.Processor.Models;
 
 namespace TeAn.Processor
 {
@@ -28,5 +29,14 @@ namespace TeAn.Processor
             //Возвращаем список уникальных английских слов.
             return uniqueBaseWords;
         }
+        public IEnumerable<Word> Translate(IEnumerable<string> words)
+        {
+            var translatedWords = new List<Word>();
+            foreach (string word in words)
+            {
+                translatedWords.Add(new Word { English = word, Russian = word + "_translate"});
+            }
+            return translatedWords;
+        }
     }
-}
+} 
