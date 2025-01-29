@@ -1,11 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Text.Json;
-using System.Threading.Tasks;
 using TeAn.Processor.Models;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace TeAn.Processor
 {

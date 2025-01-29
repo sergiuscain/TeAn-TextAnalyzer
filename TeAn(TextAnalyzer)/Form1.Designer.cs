@@ -31,6 +31,9 @@
             inputTextBox = new TextBox();
             convertButton = new Button();
             outputTextBox = new TextBox();
+            convertTxt = new Button();
+            convertPdf = new Button();
+            convertAndTranslatebutton = new Button();
             SuspendLayout();
             // 
             // inputTextBox
@@ -60,8 +63,44 @@
             outputTextBox.Location = new Point(12, 170);
             outputTextBox.Multiline = true;
             outputTextBox.Name = "outputTextBox";
-            outputTextBox.Size = new Size(290, 413);
+            outputTextBox.Size = new Size(430, 413);
             outputTextBox.TabIndex = 2;
+            // 
+            // convertTxt
+            // 
+            convertTxt.BackColor = Color.Honeydew;
+            convertTxt.FlatStyle = FlatStyle.Flat;
+            convertTxt.Location = new Point(93, 141);
+            convertTxt.Name = "convertTxt";
+            convertTxt.Size = new Size(96, 23);
+            convertTxt.TabIndex = 3;
+            convertTxt.Text = "Open TxT";
+            convertTxt.UseVisualStyleBackColor = false;
+            convertTxt.Click += convertTxt_Click;
+            // 
+            // convertPdf
+            // 
+            convertPdf.BackColor = Color.Honeydew;
+            convertPdf.FlatStyle = FlatStyle.Flat;
+            convertPdf.Location = new Point(195, 141);
+            convertPdf.Name = "convertPdf";
+            convertPdf.Size = new Size(96, 23);
+            convertPdf.TabIndex = 4;
+            convertPdf.Text = "Open Pdf";
+            convertPdf.UseVisualStyleBackColor = false;
+            convertPdf.Click += convertPdf_Click;
+            // 
+            // convertAndTranslatebutton
+            // 
+            convertAndTranslatebutton.BackColor = Color.Honeydew;
+            convertAndTranslatebutton.FlatStyle = FlatStyle.Flat;
+            convertAndTranslatebutton.Location = new Point(297, 141);
+            convertAndTranslatebutton.Name = "convertAndTranslatebutton";
+            convertAndTranslatebutton.Size = new Size(145, 23);
+            convertAndTranslatebutton.TabIndex = 5;
+            convertAndTranslatebutton.Text = "Convert and Translate";
+            convertAndTranslatebutton.UseVisualStyleBackColor = false;
+            convertAndTranslatebutton.Click += convertAndTranslatebutton_Click;
             // 
             // Form1
             // 
@@ -69,6 +108,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
             ClientSize = new Size(1252, 595);
+            Controls.Add(convertAndTranslatebutton);
+            Controls.Add(convertPdf);
+            Controls.Add(convertTxt);
             Controls.Add(outputTextBox);
             Controls.Add(convertButton);
             Controls.Add(inputTextBox);
@@ -82,5 +124,8 @@
         private TextBox inputTextBox;
         private Button convertButton;
         private TextBox outputTextBox;
+        private Button convertTxt;
+        private Button convertPdf;
+        private Button convertAndTranslatebutton;
     }
 }
