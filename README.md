@@ -23,6 +23,6 @@
     </ul>
     <img src="https://github.com/user-attachments/assets/37554c22-f09a-4b79-af8b-bd0b09dfde2b" alt="Проект">
     <img src="https://github.com/user-attachments/assets/dfd13f14-a7a3-4ab4-abb1-97a2da8bf777" alt="Проект">
-
+<2>PS: приложение создавалось для наполнения базы данных слов и их переводов для моего проекта на MAUI- SigmaWord. Но в итоге нашел словарь с словами по уровням (A1, A2, B1, B2, C1, C2)</h2>
 </body>
 </html>
